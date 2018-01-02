@@ -34,24 +34,6 @@ color : #FEFCFF ;
 </div>
 </div>
 
-<style>
-
-.th { width: 100px ; }
-</style>
-
-         <h2 style="border-bottom:solid; border-bottom-width:2px; color:#368BC1;">Metadata Information</h2><br>
-		 <div class="container">
-	    <table style="width : 300px;" class="table table-table table-bordered table-striped">
-         <tbody >
-         {% for key,value in result.items() %} 
-         <tr >
-               <th > {{ key }} </th>
-               <td > {{ value }} </td> 
-         </tr>        
-         {% endfor %}
-</tbody>
-</table>
-</div>
 
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 
