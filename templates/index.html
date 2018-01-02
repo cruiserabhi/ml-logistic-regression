@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.js"> </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <body style="background-color:#ECF0F1"  >
+<title>Welcome</title>
+<style>
+.nav h1,h3 { color :  #FEFCFF;
+}
+.cap { position : absolute ;
+top:0px ;
+}
+.text {  position : absolute ;
+top:150px ;
+right: 10px;
+color : #FEFCFF ;
+}
+</style>
+<div class="nav">
+<div class="jumbotron" style="background-color:  #368BC1  ;">
+<div class="cap">
+<img src='https://www.capgemini.com/wp-content/uploads/2017/10/cg_logo.jpg'  width="200" height="40" />
+</div>
+<div class="text">Abhshek Dhar/Anirban Kar<br>December 2017</div>
+<div class="container">
+    <h1>P&ES - Machine Learning Workshop</h1>    
+<h3>Logistic Regression</h3>	
+  </div>   
+</div>
+</div>
+
+
+ 
+
+
+<style>
+.pos{
+position : absolute ;
+top: 250px ;
+margin-bottom: 150px ;
+left: 30%;
+margin-right: 500px ;
+}
+</style>
+	  <div class="pos">
+	   <form action="/upload" method="post" enctype="multipart/form-data">
+		<div class="input-group">
+            <p class="lead">Enter the total no. of rows  </p>
+            <input name="Total No. Of Rows" type="number" required="true"  value="" />
+		</div>  
+		</br>
+      <div  class="input-group">
+            <p class="lead">Enter the no. of rows for training  </p>
+            <input name="No. of rows for training" type="number"  required="true"  value="" />
+        </div>
+      <br>
+		
+      
+
+	
+      
+		<div  class="input-group">
+		<p class="lead">Enter the column numbers containing missing values  </p>
+            <input name="Column Containing Missing Values" type="text"    value="" />
+			<span class="help-block">Enter if only there are missing values<br>If multiple, must enter comma separated</span>    
+        </div>	
+   
+		<br>
+		<br>
+        
+		
+	<p class="lead">Upload your .csv file</p>
+		
+        
+           
+            <input required="true" type="file" name="data_file" style=" padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+	background-color:white;
+	size : 20px ;
+	border-style : solid ;
+	border-width : 1px ;
+	border-color : #B6B6B4 ;
+	">
+        
+
+      
+		<br>
+		<input class="btn btn-primary "  type="Submit" />
+			
+		</div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	 
+	</script>
+ </form> 
+ 
+  
+</body>
+
+</html>

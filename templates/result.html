@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ <body style="background-color:#ECF0F1 " >
+<title>Uploaded Information</title>
+<style>
+.nav h1 { color :  #FEFCFF;
+}
+.cap { position : absolute ;
+top:0px ;
+}
+.text {  position : absolute ;
+top:150px ;
+right: 10px;
+color : #FEFCFF ;
+}
+</style>
+<div class="nav">
+<div class="jumbotron" style="background-color:  #368BC1  ;">
+<div class="cap">
+<img src='https://www.capgemini.com/wp-content/uploads/2017/10/cg_logo.jpg'  width="200" height="40" />
+</div>
+<div class="text">Abhshek Dhar/Anirban Kar<br>December 2017</div>
+<div class="container">
+    <h1>P&ES - Machine Learning Workshop</h1>      
+  </div>   
+</div>
+</div>
+
+<style>
+
+.th { width: 100px ; }
+</style>
+
+         <h2 style="border-bottom:solid; border-bottom-width:2px; color:#368BC1;">Metadata Information</h2><br>
+		 <div class="container">
+	    <table style="width : 300px;" class="table table-table table-bordered table-striped">
+         <tbody >
+         {% for key,value in result.items() %} 
+         <tr >
+               <th > {{ key }} </th>
+               <td > {{ value }} </td> 
+         </tr>        
+         {% endfor %}
+</tbody>
+</table>
+</div>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+<h2 style="border-bottom:solid; border-bottom-width:2px;color:#368BC1;">CSV File Contents</h2><br>
+<div class=page>
+
+
+   {% for table in tables %}
+  {{ table|safe }}
+  {% endfor %}
+
+</div>
+
+
+
+
+         <h2 style="border-bottom:solid; border-bottom-width:2px;color:#368BC1;">Prediction</h2><br>
+		 <div class=page>
+
+
+   {% for res1 in res %}
+  {{ res1|safe }}
+  {% endfor %}
+
+</div>
+
+ </body>
+</html>
